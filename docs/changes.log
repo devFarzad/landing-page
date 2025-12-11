@@ -120,3 +120,13 @@
 - Structured data helps search engines understand the business type and location
 - All SEO tags follow best practices for Next.js 14 App Router
 
+## [2024-01-XX] [VERIFICATION] [FACEBOOK_DOMAIN] Added Facebook domain verification meta tag
+
+### Files Modified:
+- `app/layout.tsx` - Added Facebook domain verification meta tag
+
+### Details:
+- Added `<meta name="facebook-domain-verification" content="zxutbvpjayara9xwtp6xgw1mirf3an" />` to head section
+- Meta tag is properly placed in the `<head>` section for Facebook verification
+- Verification code: zxutbvpjayara9xwtp6xgw1mirf3an
+

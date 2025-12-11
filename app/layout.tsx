@@ -94,6 +94,9 @@ export default function RootLayout({
         <meta name="geo.position" content="36.1911;44.0092" />
         <meta name="ICBM" content="36.1911, 44.0092" />
         
+        {/* Facebook Domain Verification */}
+        <meta name="facebook-domain-verification" content="zxutbvpjayara9xwtp6xgw1mirf3an" />
+        
         {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
