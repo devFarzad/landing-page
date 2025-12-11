@@ -1,0 +1,93 @@
+# Changes Log
+
+## [2024-01-XX] [INITIAL_SETUP] [PROJECT] Initial project setup
+
+### Files Created:
+- `package.json` - Project dependencies and scripts
+- `tsconfig.json` - TypeScript configuration
+- `next.config.js` - Next.js configuration
+- `tailwind.config.js` - Tailwind CSS configuration with brown/green color scheme
+- `postcss.config.js` - PostCSS configuration
+- `.gitignore` - Git ignore file
+
+### App Structure:
+- `app/layout.tsx` - Root layout with metadata
+- `app/page.tsx` - Main landing page
+- `app/globals.css` - Global styles with Tailwind
+
+### Components Created:
+- `components/Hero.tsx` - Hero section with logo and fade-in animation
+- `components/About.tsx` - About section with bio and scroll animation
+- `components/Contact.tsx` - Contact section with phone, email, address
+
+### Documentation:
+- `docs/context.md` - Project context and overview
+- `docs/changes.log` - This file
+- `docs/files_structure.md` - File structure documentation
+
+### Details:
+- Set up Next.js 14 with TypeScript and App Router
+- Configured Tailwind CSS with custom brown/green color palette
+- Integrated Framer Motion for subtle animations
+- Created responsive, modern landing page
+- Moved logos to public/logos directory for Next.js Image optimization
+
+## [2024-01-XX] [STYLING] [BACKGROUND_COLOR] Changed background color to #D2AE72
+
+### Files Modified:
+- `tailwind.config.js` - Added beige color (#D2AE72) to color palette
+- `app/globals.css` - Updated CSS variables to use #D2AE72 background
+- `components/Hero.tsx` - Changed background from white/gray gradient to beige
+- `components/About.tsx` - Changed background from white to beige
+- `components/Contact.tsx` - Changed background from gray/white gradient to beige
+
+### Details:
+- Updated all section backgrounds to use #D2AE72 (beige) color
+- Added beige color to Tailwind config for consistent usage
+- Removed gradient backgrounds in favor of solid beige color
+
+## [2024-01-XX] [CONTENT] [ABOUT_SECTION] Removed feature boxes from About section
+
+### Files Modified:
+- `components/About.tsx` - Removed feature boxes (Strong Engineering, Premium Finishes, Peaceful Community)
+
+### Details:
+- Simplified About section to show only heading and bio text
+- Removed three feature cards that were displayed below the bio
+- Kept clean, minimal design with just the company description
+
+## [2024-01-XX] [CONTENT] [HERO_SECTION] Removed title, tagline, and features text from Hero
+
+### Files Modified:
+- `components/Hero.tsx` - Removed "ASCO Village" title, "Modern Villa Project" subtitle, and "Premium Construction • Exceptional Engineering • Family Community" line
+- `app/page.tsx` - Removed About section from page
+
+### Details:
+- Hero section now displays only the logo image
+- Removed all text content from Hero section (title, tagline, features)
+- Removed About section completely from the landing page
+- Page now consists of only Hero (logo) and Contact sections
+
+## [2024-01-XX] [LAYOUT] [HERO_REDESIGN] Redesigned Hero with Coming Soon and Contact sections
+
+### Files Modified:
+- `components/Hero.tsx` - Redesigned to show logo, Coming Soon section, and Contact section side by side
+- `app/page.tsx` - Removed separate Contact component (now integrated in Hero)
+
+### Details:
+- Created professional two-column layout (logo on left, content on right)
+- Added "Coming Soon" section with standard styling (no countdown timer)
+- Integrated Contact section next to logo in professional layout
+- Contact items displayed as horizontal cards with icons
+- Responsive design: stacks vertically on mobile, side-by-side on desktop
+- All sections use smooth animations and professional styling
+
+## [2024-01-XX] [CONTENT] [CONTACT_HEADING] Removed "Contact Us" heading
+
+### Files Modified:
+- `components/Hero.tsx` - Removed "Contact Us" heading from contact section
+
+### Details:
+- Removed the "Contact Us" heading text
+- Contact information cards remain visible without the heading
+
