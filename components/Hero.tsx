@@ -21,7 +21,7 @@ export default function Hero() {
     {
       icon: FaMapMarkerAlt,
       label: 'Address',
-      value: 'Erbil - Piramam Road - Opposite Grand Majidi Mall',
+      value: 'Erbil - Pirmam Road - Opposite Grand Majidi Mall',
       href: null,
     },
   ]
