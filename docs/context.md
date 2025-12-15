@@ -10,7 +10,7 @@ ASCO Village is a Next.js landing page for ASCO, a construction company behind A
 - **Description**: ASCO is a construction company behind ASCO VILLAGE, a modern villa project offering strong engineering, premium finishes, and a peaceful community for families.
 - **Phone**: +964 770 611 0181
 - **Email**: info@ascovillage.com
-- **Address**: Erbil - Piramam Road - Opposite Grand Majidi Mall
+- **Address**: Erbil - Pirmam Road - Opposite Grand Majidi Mall
 
 ## Technical Stack
 

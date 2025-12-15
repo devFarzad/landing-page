@@ -29,7 +29,7 @@ export default function Contact() {
     {
       icon: FaMapMarkerAlt,
       label: 'Address',
-      value: 'Erbil - Piramam Road - Opposite Grand Majidi Mall',
+      value: 'Erbil - Pirmam Road - Opposite Grand Majidi Mall',
       href: null,
       color: 'text-brown-dark',
       hoverColor: '',
