@@ -9,8 +9,10 @@ export default function Hero() {
     {
       icon: FaPhone,
       label: 'Phone',
-      value: '+964 770 611 0181',
-      href: 'tel:+9647706110181',
+      values: [
+        { display: '0750 400 81 00', href: 'tel:+9647504008100' },
+        { display: '0750 400 82 00', href: 'tel:+9647504008200' },
+      ],
     },
     {
       icon: FaEnvelope,
@@ -72,10 +74,7 @@ export default function Hero() {
               <div className="space-y-4">
                 {contactItems.map((item, index) => {
                   const Icon = item.icon
-                  const Component = item.href ? 'a' : 'div'
-                  const props = item.href
-                    ? { href: item.href, className: 'cursor-pointer' }
-                    : { className: '' }
+                  const hasMultipleValues = 'values' in item
 
                   return (
                     <motion.div
@@ -88,10 +87,7 @@ export default function Hero() {
                         ease: 'easeOut',
                       }}
                     >
-                      <Component
-                        {...props}
-                        className={`flex items-center gap-4 p-4 rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg ${item.href ? 'hover:bg-gray-50' : ''} ${props.className}`}
-                      >
+                      <div className="flex items-center gap-4 p-4 rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg">
                         <div className="flex-shrink-0">
                           <Icon className="text-2xl text-green-dark" />
                         </div>
@@ -99,11 +95,32 @@ export default function Hero() {
                           <h3 className="text-sm font-semibold text-gray-600 mb-1">
                             {item.label}
                           </h3>
-                          <p className="text-base text-brown-dark font-medium">
-                            {item.value}
-                          </p>
+                          {hasMultipleValues ? (
+                            <div className="space-y-1">
+                              {item.values?.map((phoneItem, phoneIndex) => (
+                                <a
+                                  key={phoneIndex}
+                                  href={phoneItem.href}
+                                  className="block text-base text-brown-dark font-medium hover:text-green-dark transition-colors"
+                                >
+                                  {phoneItem.display}
+                                </a>
+                              ))}
+                            </div>
+                          ) : item.href ? (
+                            <a
+                              href={item.href}
+                              className="text-base text-brown-dark font-medium hover:text-green-dark transition-colors"
+                            >
+                              {item.value}
+                            </a>
+                          ) : (
+                            <p className="text-base text-brown-dark font-medium">
+                              {item.value}
+                            </p>
+                          )}
                         </div>
-                      </Component>
+                      </div>
                     </motion.div>
                   )
                 })}
